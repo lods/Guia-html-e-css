@@ -43,12 +43,33 @@ body {
   font-weight: bold; (define o negrito ou pesada ela pode ser, alem do bold tem o normal)
   font-size: 1em; (define o tamanho da fonte, pode ser em px, pt, % ou em)
   font:	italic bold 30px arial, sans-serif; (usando de uma vez, onde deve ser colocada na ordem: font-style | font-variant | font-weight | font-size | font-family)	
-  text-indent: 
-  text-align:
-  text-decoration:
-  text-spacing:
-  text-transform:
-
+  text-indent: 30px; (permite um recuo a primeira linha de um paragrafo)
+  text-align: right; (define o alinhamento do texto, ex: left, right, center e justify)
+  text-decoration: underline; (possibilita colocar efeitos ou decoraçoes nos texto, ex: underline(sublinhado), overline, line-through)
+  letter-spacing: 4px; (coloca o espaçamento entre as letras)
+  text-transform: uppercase; (torna maiuscula as letras do texto, ex: capitalize, uppercase, lowercase e none)
+  a:link { color: blue; (coloca a cor do link nao visitado como azuk)}
+  a:visited {color: red; (coloca o link visitado como vermelho)}	
+  a:active {background-color: red; (usado para links ativos)}
+  a:hover {color: black;
+	   font-style: italic; (usado quando o ponteiro do mouse esta sobre o link)}
+  Classes: sao usadas quando voce deseja definir um bloco determinado, por exemplo em ma lista
+    no html:	<li><a href="analista.htm" class="sistemas">Joselito</a></li>
+    no css:     a.sistemas { color: blue; }
+  id: parecido com class mais usada para um elemento unico, por exemplo:
+    no html:    <h1 id="c1.5">Capítulo 1.5</h1>
+    no css:     #c1.5 { color: orange; }
+  span: usado para definir efeitos visuais a partes especificas do texto, por exemplo:
+    no html:    <p><span class="god">Deus</span> ajuda quem cedo madruga.</p>
+    no css:     span.god { color:red; }
+  div: usado para agrupar um ou mais elementos de um bloco, por exemplo:
+    no html:    <div id="mamiferos">
+			<ul>
+			<li>Baleias</li>
+			<li>Gatos</li>
+			</ul>
+		</div>
+    no css:     #mamiferos { background: yellow;}
 
 }
 
