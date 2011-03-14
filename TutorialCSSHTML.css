@@ -1,0 +1,55 @@
+HTML - Fast
+
+<html>
+<head>
+<body>
+<h1 ate h6>... é o tamanho do texto onde h1 o > e h6 < </h1 atr h6>
+<p>... coloca um paragrafo </p>
+<strong>... negrito </strong>
+<em>... italico </em>
+<br>... quebra a linha, e nao utiliza tag de fechamento
+
+
+CSS - Fast
+
+No html direto
+<style type="text/css" title="mystyles" media="all">
+<!-- comentario
+-->
+</style>
+ou link
+<link rel="stylesheet" type="text/css" href="layout.css" />
+
+type="text/css"  -> informa que estamos usando um arquivo texto para definir o estilo
+title="mystyles" -> define o nome de seus estilos
+media="all"      -> exibe todas as midias(ex: screen, aural, braile, print, tv, projection)
+href="layout.css"-> local onde esta o css, neste cas esta no desktop
+
+Tudo que estiver dentro das tags <body>...</body> terá este estilo ou conjunto de estilos que lhe for aplicado
+Basicamente a definição de estilos para body se parece com...
+
+body {
+  background-color: #e8eae8; (define o fundo da pagina, que é cinza claro neste caso que pode ser em a palavra em ingles neste caso gray)
+  background-image: url("teste.jpeg"); (define a imagem de fundo)
+  background-repeat: repeat; (repete a imagem, pode ser repeat-x, repeat-y, repeat e no-repeat onde sao: a imagem repete na horizontal, vertical, nas duas e nao repete)
+  background-attachment: fixed; (se a imagem ira ser fixa ou rola com a pagina que é a scroll)
+  background-position: right bottom; (coloca a imagem onde voce posicionar, pode ser: cm, % ou palavras como top right)	
+  color: #5d665b; (define a cor do texto)
+  margin: 50px;   (define a margem ao redor da pagina para ajustar o posicionamento dos textos na tela)
+  background: #FFCC66 url("teste.jpeg") no-repeat; (o background pode ser escrito tudo junto como no exemplo)
+  font-family: arial, verdana, "Times New Roman", serif; (define a fonte, usando varias caso nao tenha uma instalada no micro ele usa a outra)
+  font-style: italic; (pode ser tambem: normal ou oblique)
+  font-variant: small-caps; (define o tamanho pode ser normal ou small-caps)
+  font-weight: bold; (define o negrito ou pesada ela pode ser, alem do bold tem o normal)
+  font-size: 1em; (define o tamanho da fonte, pode ser em px, pt, % ou em)
+  font:	italic bold 30px arial, sans-serif; (usando de uma vez, onde deve ser colocada na ordem: font-style | font-variant | font-weight | font-size | font-family)	
+  text-indent: 
+  text-align:
+  text-decoration:
+  text-spacing:
+  text-transform:
+
+
+}
+
+
