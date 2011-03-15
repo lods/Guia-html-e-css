@@ -35,7 +35,15 @@ body {
   background-attachment: fixed; (se a imagem ira ser fixa ou rola com a pagina que é a scroll)
   background-position: right bottom; (coloca a imagem onde voce posicionar, pode ser: cm, % ou palavras como top right)	
   color: #5d665b; (define a cor do texto)
-  margin: 50px;   (define a margem ao redor da pagina para ajustar o posicionamento dos textos na tela)
+  margin: 50px;   (define a margem ao redor da pagina para ajustar o posicionamento dos textos na tela, pode ser por exemplo no body {
+		margin-top: 100px;
+		margin-right: 50px;
+		margin-bottom: 40px;
+		margin-left: 80px;
+	} ou body {
+		margin: 100px 50px 40px 80px;
+	}
+)
   background: #FFCC66 url("teste.jpeg") no-repeat; (o background pode ser escrito tudo junto como no exemplo)
   font-family: arial, verdana, "Times New Roman", serif; (define a fonte, usando varias caso nao tenha uma instalada no micro ele usa a outra)
   font-style: italic; (pode ser tambem: normal ou oblique)
@@ -70,7 +78,29 @@ body {
 			</ul>
 		</div>
     no css:     #mamiferos { background: yellow;}
-
+  padding: 30px 30px 30px 70px; (define o enchimento, podendo ser usado para um local so como padding-right: 100px;)  	
+  border-width: medium; (espessura da borda, podendo ser: thin, medium, thick ou em px)
+  border-color: black; (cor da borda)
+  border-style: none; (tipos de bordas, alem do none tem hidden, dotted, dashed, solid, double, groove, ridge, inset e outset)
+  border: 2px double yellow; (pode ser colocado tambem desta forma)
+  width: 100px; (define a largura)
+  height: 600px; (define a altura)
+  float: left; (coloca um determinado conteudo para a esquerda, por exemplo colocando uma imagem para um lado e um paragrafo no lugar que era dela antes do deslocamento)
+  clear: right; (controla o comportamento dos elementos que seguem os elementos floats, pode ser left, right, both ou none)
+  position: absolute; (define o posicionamento real do elemento, por exemplo #box1 {
+		position:absolute;
+		top: 60px;
+		left: 60px;
+		bottom: 60px;
+		right: 60px;
+	})
+  position: relative; (posiciona o elemento de forma relativa, codificaçao parecida com absolute, #box2 {
+		position:relative;
+		left: 350px;
+		bottom: 150px;
+		right: 200px;
+		top: 400px;
+	})
 }
 
 
