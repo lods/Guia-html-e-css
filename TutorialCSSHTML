@@ -1,0 +1,106 @@
+HTML - Fast
+
+<html>
+<head>
+<body>
+<h1 ate h6>... é o tamanho do texto onde h1 o > e h6 < </h1 atr h6>
+<p>... coloca um paragrafo </p>
+<strong>... negrito </strong>
+<em>... italico </em>
+<br>... quebra a linha, e nao utiliza tag de fechamento
+
+
+CSS - Fast
+
+No html direto
+<style type="text/css" title="mystyles" media="all">
+<!-- comentario
+-->
+</style>
+ou link
+<link rel="stylesheet" type="text/css" href="layout.css" />
+
+type="text/css"  -> informa que estamos usando um arquivo texto para definir o estilo
+title="mystyles" -> define o nome de seus estilos
+media="all"      -> exibe todas as midias(ex: screen, aural, braile, print, tv, projection)
+href="layout.css"-> local onde esta o css, neste cas esta no desktop
+
+Tudo que estiver dentro das tags <body>...</body> terá este estilo ou conjunto de estilos que lhe for aplicado
+Basicamente a definição de estilos para body se parece com...
+
+body {
+  background-color: #e8eae8; (define o fundo da pagina, que é cinza claro neste caso que pode ser em a palavra em ingles neste caso gray)
+  background-image: url("teste.jpeg"); (define a imagem de fundo)
+  background-repeat: repeat; (repete a imagem, pode ser repeat-x, repeat-y, repeat e no-repeat onde sao: a imagem repete na horizontal, vertical, nas duas e nao repete)
+  background-attachment: fixed; (se a imagem ira ser fixa ou rola com a pagina que é a scroll)
+  background-position: right bottom; (coloca a imagem onde voce posicionar, pode ser: cm, % ou palavras como top right)	
+  color: #5d665b; (define a cor do texto)
+  margin: 50px;   (define a margem ao redor da pagina para ajustar o posicionamento dos textos na tela, pode ser por exemplo no body {
+		margin-top: 100px;
+		margin-right: 50px;
+		margin-bottom: 40px;
+		margin-left: 80px;
+	} ou body {
+		margin: 100px 50px 40px 80px;
+	}
+)
+  background: #FFCC66 url("teste.jpeg") no-repeat; (o background pode ser escrito tudo junto como no exemplo)
+  font-family: arial, verdana, "Times New Roman", serif; (define a fonte, usando varias caso nao tenha uma instalada no micro ele usa a outra)
+  font-style: italic; (pode ser tambem: normal ou oblique)
+  font-variant: small-caps; (define o tamanho pode ser normal ou small-caps)
+  font-weight: bold; (define o negrito ou pesada ela pode ser, alem do bold tem o normal)
+  font-size: 1em; (define o tamanho da fonte, pode ser em px, pt, % ou em)
+  font:	italic bold 30px arial, sans-serif; (usando de uma vez, onde deve ser colocada na ordem: font-style | font-variant | font-weight | font-size | font-family)	
+  text-indent: 30px; (permite um recuo a primeira linha de um paragrafo)
+  text-align: right; (define o alinhamento do texto, ex: left, right, center e justify)
+  text-decoration: underline; (possibilita colocar efeitos ou decoraçoes nos texto, ex: underline(sublinhado), overline, line-through)
+  letter-spacing: 4px; (coloca o espaçamento entre as letras)
+  text-transform: uppercase; (torna maiuscula as letras do texto, ex: capitalize, uppercase, lowercase e none)
+  a:link { color: blue; (coloca a cor do link nao visitado como azuk)}
+  a:visited {color: red; (coloca o link visitado como vermelho)}	
+  a:active {background-color: red; (usado para links ativos)}
+  a:hover {color: black;
+	   font-style: italic; (usado quando o ponteiro do mouse esta sobre o link)}
+  Classes: sao usadas quando voce deseja definir um bloco determinado, por exemplo em ma lista
+    no html:	<li><a href="analista.htm" class="sistemas">Joselito</a></li>
+    no css:     a.sistemas { color: blue; }
+  id: parecido com class mais usada para um elemento unico, por exemplo:
+    no html:    <h1 id="c1.5">Capítulo 1.5</h1>
+    no css:     #c1.5 { color: orange; }
+  span: usado para definir efeitos visuais a partes especificas do texto, por exemplo:
+    no html:    <p><span class="god">Deus</span> ajuda quem cedo madruga.</p>
+    no css:     span.god { color:red; }
+  div: usado para agrupar um ou mais elementos de um bloco, por exemplo:
+    no html:    <div id="mamiferos">
+			<ul>
+			<li>Baleias</li>
+			<li>Gatos</li>
+			</ul>
+		</div>
+    no css:     #mamiferos { background: yellow;}
+  padding: 30px 30px 30px 70px; (define o enchimento, podendo ser usado para um local so como padding-right: 100px;)  	
+  border-width: medium; (espessura da borda, podendo ser: thin, medium, thick ou em px)
+  border-color: black; (cor da borda)
+  border-style: none; (tipos de bordas, alem do none tem hidden, dotted, dashed, solid, double, groove, ridge, inset e outset)
+  border: 2px double yellow; (pode ser colocado tambem desta forma)
+  width: 100px; (define a largura)
+  height: 600px; (define a altura)
+  float: left; (coloca um determinado conteudo para a esquerda, por exemplo colocando uma imagem para um lado e um paragrafo no lugar que era dela antes do deslocamento)
+  clear: right; (controla o comportamento dos elementos que seguem os elementos floats, pode ser left, right, both ou none)
+  position: absolute; (define o posicionamento real do elemento, por exemplo #box1 {
+		position:absolute;
+		top: 60px;
+		left: 60px;
+		bottom: 60px;
+		right: 60px;
+	})
+  position: relative; (posiciona o elemento de forma relativa, codificaçao parecida com absolute, #box2 {
+		position:relative;
+		left: 350px;
+		bottom: 150px;
+		right: 200px;
+		top: 400px;
+	})
+}
+
+
