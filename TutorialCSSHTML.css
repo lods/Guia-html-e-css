@@ -1,3 +1,5 @@
+ESTE TUTORIAL FOI FEITO POR MIM SOMENTE COMO UM GUIA PARA AUXILIO RAPIDO
+
 HTML - Fast
 
 <html>
@@ -8,7 +10,18 @@ HTML - Fast
 <strong>... negrito </strong>
 <em>... italico </em>
 <br>... quebra a linha, e nao utiliza tag de fechamento
-
+<hr>... cria uma linha divisoria, possui os atributos: align=left | center | right, size=x, width=x | x%, noshade
+<ol>...lista ordenada, possui os atributos: type=1(sequencia numerica) | A(letras maiusculas) | a(letras minusculas) | I(sequencia numerica, algarismos romanos maiusculos) | i(sequencia numerica, algarismos romanos minusculos), start=x(a partir de onde sera ordenado a lista) </ol>
+<ul>... lista nao ordenada, possui os atributos: type=disc (marcador de um pequeno circulo cheio) | circle (marcador de um pequeno circulo vazio) | square (marcador de um pequeno quadrado cheio) </ul>
+<li>... inicia um item de lista ordenada ou nao, atributos: type=1 | A | a | I | i | disc | circle | square </li>
+<dl>... lista de definiçoes </dl>
+<dt>... inicia um termo a ser definido </dt>
+<dd>... inicia uma definiçao do termo </dd>
+<table>... inicia uma tabela com os atributos abaixo
+<tr>... linha de uma tabela </tr>
+<td>... celula dentro de uma linha de uma tabela </td>
+<th>... funciona da mesma forma que a <td> mais o texto aparece centralizado em negito </th>
+</table>
 
 CSS - Fast
 
