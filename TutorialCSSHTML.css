@@ -43,7 +43,7 @@ Basicamente a definição de estilos para body se parece com...
 
 body {
   background-color: #e8eae8; (define o fundo da pagina, que é cinza claro neste caso que pode ser em a palavra em ingles neste caso gray)
-  background-image: url("teste.jpeg"); (define a imagem de fundo)
+  background-image: url(teste.jpeg); (define a imagem de fundo, nao e necessario o "")
   background-repeat: repeat; (repete a imagem, pode ser repeat-x, repeat-y, repeat e no-repeat onde sao: a imagem repete na horizontal, vertical, nas duas e nao repete)
   background-attachment: fixed; (se a imagem ira ser fixa ou rola com a pagina que é a scroll)
   background-position: right bottom; (coloca a imagem onde voce posicionar, pode ser: cm, % ou palavras como top right)	
@@ -57,8 +57,8 @@ body {
 		margin: 100px 50px 40px 80px;
 	}
 )
-  background: #FFCC66 url("teste.jpeg") no-repeat; (o background pode ser escrito tudo junto como no exemplo)
-  font-family: arial, verdana, "Times New Roman", serif; (define a fonte, usando varias caso nao tenha uma instalada no micro ele usa a outra)
+  background: #FFCC66 url(teste.jpeg) no-repeat; (o background pode ser escrito tudo junto como no exemplo)
+  font-family: arial, verdana, "Times New Roman", serif; (define a fonte, usando varias caso nao tenha uma instalada no micro ele usa a outra, quando tiver mais de um nome usar "", como no exemplo)
   font-style: italic; (pode ser tambem: normal ou oblique)
   font-variant: small-caps; (define o tamanho pode ser normal ou small-caps)
   font-weight: bold; (define o negrito ou pesada ela pode ser, alem do bold tem o normal)
@@ -114,6 +114,13 @@ body {
 		right: 200px;
 		top: 400px;
 	})
+  outline-style: none; (define o estilo da linha de contorno, podendo ser: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset)
+  outline-width: thin; (espessua da lina de contorno, podendo ser: medium, thick, unids_css)
+  outline-color: black; (define a cor da linha de contorno)
+  outline: hidden medium white; (usando da forma abreviada)
+  list-style-image: none; (coloca imagem como marcador da lista, como: none, url(gears.jpeg))
+  list-style-position: outside; (onde o marcador da lista ficara posicionado, podendo ser: outside, inside)
+  list-style-type: disc; (define o tipo do marcador da lista, como: none (sem marcador), disc (círculo a bolinha cheia), circle (circunferência a bolinha vazia), square (quadrado cheio), decimal (números 1, 2, 3, ...), decimal-leading-zero, lower-roman (romano minúsculo i, ii, iii, iv, ...), upper-roman (romano maiúsculo I, II, III, IV, ...), lower-alpha (letra minúscula a, b, c, ...), upper-alpha (letra maiúscula A, B, C, ...), lower-greek, lower-latin, upper-latin, hebrew, armenian, georgian, cjk-ideographic, hiragana, katakana, hiragana-iroha, katakana-iroha)
 }
 
 
