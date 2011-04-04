@@ -1,0 +1,79 @@
+Comandos basicos no Linux
+
+cal: exibe um calendário
+
+cat arquivo: mostra o conteúdo de um arquivo. Por exemplo, para ver o arquivo gears.txt, basta digitar cat gears.txt
+
+cd diretório: abre um diretório
+
+cp origem destino: copia um arquivo ou diretório para outro local. Por exemplo, para copiar o arquivo gears.txt com o nome gears2.txt para /home, basta digitar cp gears.txt /home/gears2.txt
+
+mv origem destino: tem a mesma função do comando cp, só que ao invés de copiar, move o arquivo ou o diretório para o destino especificado
+
+mkdir diretório: cria um diretório
+
+rm arquivo: apaga o arquivo especificado
+
+rmdir diretório: apaga o diretório especificado, desde que vazio
+
+chmod: comando para alterar as permissões de arquivos e diretórios
+
+tar -xzvf arquivo.tar.gz: extrai um arquivo compactado em tar.gz. Saiba mais no artigo Compactação e descompactação de arquivos com Tar e gzip
+
+clear: limpa a tela
+
+date: mostra a data e a hora atual
+
+df: mostra as partições usadas
+
+diff arquivo1 arquivo2: indica as diferenças entre dois arquivos, por exemplo: diff calc.c calc2.c
+
+du diretório: mostra o tamanho de um diretório
+
+file arquivo: mostra informações de um arquivo
+
+finger usuário: exibe informações sobre o usuário indicado
+
+free: mostra a quantidade de memória RAM disponível
+
+halt: desliga o computador
+
+history: mostra os últimos comandos inseridos
+
+id usuário: mostra qual o número de identificação do usuário especificado no sistema
+
+kill: encerra processados em andamento
+
+ls: lista os arquivos e diretórios da pasta atual
+
+passwd: altera sua senha. Para um administrador mudar a senha de um usuário, basta digitar passwd seguido do nome deste
+
+ps: mostra os processos em execução
+
+pwd: mostra o diretório em que você está
+
+reboot: reinicia o sistema imediatamente
+
+shutdown: desliga ou reinicia o computador, veja:
+shutdown -r now: reinicia o computador
+shutdown -h now: desliga o computador
+
+O parâmetro now pode ser mudado. Por exemplo: digite shutdown -r +10 e o sistema irá reiniciar daqui a 10 minutos;
+
+su: passa para o usuário administrador
+
+telnet: ativa o serviço de Telnet em uma máquina. Para acessar esse computador a partir de outros por Telnet, basta digitar telnet nomedamáquina ou telnet IP. Por exemplo: telnet 192.168.0.10. Após abrir o Telnet, digite help para conhecer suas funções
+
+uname: mostra informações do sistema operacional e do computador
+
+useradd usuário: cria uma nova conta usuário, por exemplo, useradd Audrey cria o usuário Audrey
+
+userdel usuário: apaga a conta do usuário especificado
+
+uptime: mostra a quantas horas seu computador está ligado
+
+whereis nome: procura pelo binário do arquivo indicado, útil para conhecer seu diretório ou se ele existe no sistema;
+
+w: mostra os usuários logados atualmente no computador (útil para servidores);
+
+who: mostra quem está usando o sistema
